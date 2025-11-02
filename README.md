@@ -1,4 +1,4 @@
-Initial version: 1
+Version: 1
 
 A generally functioning clock.
 
@@ -23,3 +23,7 @@ Version 1.3:
 Now keeps time switching back and forth between 12/24h modes.
 Added display funtion to show what hour mode the system has been switched to.
 Display routine for showing the hour mode written from scratch due to brightness increase when multiplexing 2 digits vs 6.
+
+Version 1.31:
+
+Fixed a bug caused by adding 12 hour mode functionality where in normal operation, the time doesn't wrap at 24 back to 0.
