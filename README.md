@@ -27,3 +27,7 @@ Display routine for showing the hour mode written from scratch due to brightness
 Version 1.31:
 
 Fixed a bug caused by adding 12 hour mode functionality where in normal operation, the time doesn't wrap at 24 back to 0.
+
+Version 1.4:
+
+Added battery backup mode to disable the MCU trying to display digits on the Nixies when 12v input is removed. Hope to save some power for running on battery power.
