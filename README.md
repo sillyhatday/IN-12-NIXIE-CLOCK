@@ -31,3 +31,8 @@ Fixed a bug caused by adding 12 hour mode functionality where in normal operatio
 Version 1.4:
 
 Added battery backup mode to disable the MCU trying to display digits on the Nixies when 12v input is removed. Hope to save some power for running on battery power.
+
+Version 1.45:
+
+Updated the dev board to bring all features back in the code. Testing required.
+Moved button logic into one function. Now it is called from main.
