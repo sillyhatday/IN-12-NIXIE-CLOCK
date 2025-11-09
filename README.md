@@ -36,3 +36,9 @@ Version 1.45:
 
 Updated the dev board to bring all features back in the code. Testing required.
 Moved button logic into one function. Now it is called from main.
+
+Version 1.50:
+
+Added counter for number of hours clock has been running in total. Display mode triggered when button is pressed. Hijacked the reset button for development.
+Run time is saved into EEPROM at addresses 0, 1, 2, 3 for unsigned long. Routine runs once. With new MCU addresses are cleared at boot and flag set in address 4
+to indicate the EEPROM addresses are initialised. On boot the flag is checked, so as not to overwrite the runtime count.
