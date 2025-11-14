@@ -42,3 +42,10 @@ Version 1.50:
 Added counter for number of hours clock has been running in total. Display mode triggered when button is pressed. Hijacked the reset button for development.
 Run time is saved into EEPROM at addresses 0, 1, 2, 3 for unsigned long. Routine runs once. With new MCU addresses are cleared at boot and flag set in address 4
 to indicate the EEPROM addresses are initialised. On boot the flag is checked, so as not to overwrite the runtime count.
+
+Version 1.51 - 1.54:
+
+Various different attempts at solving the syncing issue of the colon with the seconds tick. The bug appeared after more testing.
+Removed ISR function that was tried in attempt to keep things in sync and in phase.
+Rewrote entire colon handling from scratch. Modified timer function to count 500mS ticks to use as reference for colon. Two ticks now count 1 second.
+
