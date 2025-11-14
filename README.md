@@ -48,4 +48,5 @@ Version 1.51 - 1.54:
 Various different attempts at solving the syncing issue of the colon with the seconds tick. The bug appeared after more testing.
 Removed ISR function that was tried in attempt to keep things in sync and in phase.
 Rewrote entire colon handling from scratch. Modified timer function to count 500mS ticks to use as reference for colon. Two ticks now count 1 second.
+Used GPIO pin to control blanking of CD5411 outputs. Removed long complex routine for multiplexing 2 digits. Reduced down to an if statement in main multiplex.
 
