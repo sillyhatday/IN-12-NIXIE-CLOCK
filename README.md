@@ -48,5 +48,20 @@ Version 1.51 - 1.54:
 Various different attempts at solving the syncing issue of the colon with the seconds tick. The bug appeared after more testing.
 Removed ISR function that was tried in attempt to keep things in sync and in phase.
 Rewrote entire colon handling from scratch. Modified timer function to count 500mS ticks to use as reference for colon. Two ticks now count 1 second.
-Used GPIO pin to control blanking of CD5411 outputs. Removed long complex routine for multiplexing 2 digits. Reduced down to an if statement in main multiplex.
+Used GPIO pin to control blanking of CD4511 outputs. Removed long complex routine for multiplexing 2 digits. Reduced down to an if statement in main multiplex.
 
+Version 1.6:
+
+Added back in second multiplex routine but inside the main multiplex behind an if statement. Can't recall why I had to add it back in. Must have been buggy.
+At least it's more stream lined than before. Improved speed of multiplex function by tracking which digit was last displayed and only blanking that one, not all six. Huge improvment to the display crispness. Blanking just one digit saves 83% of the time it took to blank 6 digits. 5 of those did not need to be. Used
+digitalWriteFast library as a stop gap to using direct port manipulation much later on.
+
+Version 1.61:
+
+General tidy up of formating. Added lots of comments and removed most comments from each line unless needed for clarity. Most comments are in the top of each function in one text block. Removed some unused variables. Removed reset button references ready to trigger reset on mode button hold, or status hold.
+
+Version 1.65:
+
+Once again removed the second multiplex function for two digit mode. No longer using any digitalWriteFast in multiplex function. Blanking digits with invalid
+data sent to the CD4511. This was tried before and didn't work as I didn't remember to expand the array for the new data to send. It was sending random data
+in RAM at that moment instead!
