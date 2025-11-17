@@ -64,4 +64,5 @@ Version 1.65:
 
 Once again removed the second multiplex function for two digit mode. No longer using any digitalWriteFast in multiplex function. Blanking digits with invalid
 data sent to the CD4511. This was tried before and didn't work as I didn't remember to expand the array for the new data to send. It was sending random data
-in RAM at that moment instead!
+in RAM at that moment instead! This was needed realising that the nixie tube driver doe not have a blanking input. Nixie PSU gate control output added ready for
+prototype PSU and logic PCB.
