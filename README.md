@@ -16,19 +16,19 @@ It is currently unfinished. It is still in software development and finalisation
 
 ### 3D mock up concept
 
-<img width="3296" height="2547" alt="Clock Assembly 6 tubes" src="https://github.com/user-attachments/assets/166c8d58-e5d6-4a49-88f3-fff9083c3fa0" />
+<img width="720" height="556" alt="Clock Assembly 6 tubes" src="https://github.com/user-attachments/assets/166c8d58-e5d6-4a49-88f3-fff9083c3fa0" />
 
 ### Inside of main housing
 
-<img width="3296" height="2547" alt="Clock Body Insides" src="https://github.com/user-attachments/assets/fbf6e1f7-941b-4de4-8bac-5d501e0ce043" />
+<img width="720" height="556" alt="Clock Body Insides" src="https://github.com/user-attachments/assets/fbf6e1f7-941b-4de4-8bac-5d501e0ce043" />
 
 ### Inside of main housing with display PCB in place
 
-<img width="3296" height="2547" alt="Clock Body Display PCB Inside" src="https://github.com/user-attachments/assets/c488713c-300d-4f3d-8f0b-3c4bbf7299af" />
+<img width="720" height="556" alt="Clock Body Display PCB Inside" src="https://github.com/user-attachments/assets/c488713c-300d-4f3d-8f0b-3c4bbf7299af" />
 
 ### Inside of main housing with both display and logic PCB in place
 
-<img width="3296" height="2547" alt="Clock Body Logic PCB inside" src="https://github.com/user-attachments/assets/7d7c772c-660d-4a1f-aa01-923126aa2ce5" />
+<img width="720" height="556" alt="Clock Body Logic PCB inside" src="https://github.com/user-attachments/assets/7d7c772c-660d-4a1f-aa01-923126aa2ce5" />
 
 ### Logic/Power PCB
 
