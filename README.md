@@ -4,7 +4,7 @@ This clock was designed with the idea of using IN-12 Nixie Tubes as its display.
 
 The design is to be modular and 3D printing or machining friendly. The final build I would like making from aluminium or stainless steel. The use of feet or legs is yet to be determined.
 
-The internal electronics are mounted on two PCBs with a connecting pin header. One PCB for power supplies and main logic, the second for the displays and display driver. The choice of putting the display driver on the display PCB, was to reduce the amount board to board connections.
+The internal electronics are mounted on two PCBs with a connecting pin header. One PCB for power supplies and main logic, the second for the displays and display driver. The choice of putting the display driver on the display PCB, was to reduce the amount board to board connections. For the PCBs to stack and not require extra components, the housing itself is designed in such a way that each PCB is keyed. This allows the PCBs to fit in only one position.
 
 The logic board contains two power supplies, MCU and anode drivers (amongst other things). One power supply is to provide the voltage required for the displays to operate. 180v was selected to keep the voltage as low as possible while keeping display operation reliable. Too low of a voltage can could issues with the display striking. The second power supply provides power to the logic circuit. It provides 5v output.
 
@@ -16,7 +16,19 @@ It is currently unfinished. It is still in software development and finalisation
 
 3D mock up concept
 
-![Clock_Assembly](https://github.com/user-attachments/assets/a903f4e6-945d-4edf-b801-d32b7b831169)
+<img width="3296" height="2547" alt="Clock Assembly 6 tubes" src="https://github.com/user-attachments/assets/166c8d58-e5d6-4a49-88f3-fff9083c3fa0" />
+
+Inside of main housing
+
+<img width="3296" height="2547" alt="Clock Body Insides" src="https://github.com/user-attachments/assets/fbf6e1f7-941b-4de4-8bac-5d501e0ce043" />
+
+Inside of main housing with display PCB in place
+
+<img width="3296" height="2547" alt="Clock Body Display PCB Inside" src="https://github.com/user-attachments/assets/c488713c-300d-4f3d-8f0b-3c4bbf7299af" />
+
+Inside of main housing with both display and logic PCB in place
+
+<img width="3296" height="2547" alt="Clock Body Logic PCB inside" src="https://github.com/user-attachments/assets/7d7c772c-660d-4a1f-aa01-923126aa2ce5" />
 
 Logic/Power PCB
 
