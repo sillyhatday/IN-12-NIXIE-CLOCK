@@ -14,23 +14,23 @@ The anode drivers are made up of discrete components. An integrated solution cou
 
 It is currently unfinished. It is still in software development and finalisation of hardware. The logic PCB is underway, requiring some hardware changes before continuing.
 
-3D mock up concept
+### 3D mock up concept
 
 <img width="3296" height="2547" alt="Clock Assembly 6 tubes" src="https://github.com/user-attachments/assets/166c8d58-e5d6-4a49-88f3-fff9083c3fa0" />
 
-Inside of main housing
+### Inside of main housing
 
 <img width="3296" height="2547" alt="Clock Body Insides" src="https://github.com/user-attachments/assets/fbf6e1f7-941b-4de4-8bac-5d501e0ce043" />
 
-Inside of main housing with display PCB in place
+### Inside of main housing with display PCB in place
 
 <img width="3296" height="2547" alt="Clock Body Display PCB Inside" src="https://github.com/user-attachments/assets/c488713c-300d-4f3d-8f0b-3c4bbf7299af" />
 
-Inside of main housing with both display and logic PCB in place
+### Inside of main housing with both display and logic PCB in place
 
 <img width="3296" height="2547" alt="Clock Body Logic PCB inside" src="https://github.com/user-attachments/assets/7d7c772c-660d-4a1f-aa01-923126aa2ce5" />
 
-Logic/Power PCB
+### Logic/Power PCB
 
 ![IN-12_Nixie_Clock_ATmega8_-_First_Traces](https://github.com/user-attachments/assets/86c3f11b-59f5-47c3-a361-d2bf923a05b1)
 
