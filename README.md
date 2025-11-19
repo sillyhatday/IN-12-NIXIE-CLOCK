@@ -40,7 +40,7 @@ Logic/Power PCB
 
 * A 12 hour mode is selectable with the "mode" button. When the button is pressed, the display will briefly switch to a 2 digit mode displaying 12 or 24, depending on the mode that has been set. The button will toggle between 12 and 24 hour modes.
 
-## Changelog
+## Firmware Changelog
 
 V1.0:
 
