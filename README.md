@@ -97,5 +97,18 @@ V1.6:
 V1.61:
 
 * General tidy up of formatting. Added lots of comments and removed most comments from each line unless needed for clarity. Most comments are in the top of each function in one text block. Removed some unused variables. Removed reset button references ready to trigger reset on mode button hold, or status hold.
+  
 V1.65:
+
 * Once again removed the second multiplex function for two digit mode. No longer using any digitalWriteFast in multiplex function. Blanking digits with invalid data sent to the CD4511. This was tried before and didn't work as I didn't remember to expand the array for the new data to send. It was sending random data in RAM at that moment instead! This was needed realising that the nixie tube driver doe not have a blanking input. Nixie PSU gate control output added ready for prototype PSU and logic PCB.
+
+V1.7:
+
+* Removed some debugging code using GPIO pins. Added an output to drive a MOSFET gate that will control the 180v boost supply, depending on 12v input being present or not. Code was added onto the section controlling display blanking as the input to perform the display blanking was already implemented.
+
+V1.71:
+
+* Changed setup function to deal with stored EEPROM data differently and how it is initialised on first power up. Added in a basic check routine to confirm EEPROM is working, else show 999,999 on the run time display. Not sure it was needed as the problems I was having went away when shifting the EEPROM storage addresses. I think this unknown Aliexpress chip is somewhat dodgy. It is probably worn out. The chip has been reprinted on top while the underside is beat to hell.
+
+V1.8:
+* Implemented a multi-function button routine. Status button now serves dual function. It is a new function in code that handles just that button, where it should be merged with the existing button handler. I don't plan on any more multi function buttons, so I'll leave this alone. Holding the status button now does a software reset of the time. Pressing the button works as before but activates on release of the button, not on the press.
