@@ -112,3 +112,6 @@ V1.71:
 
 V1.8:
 * Implemented a multi-function button routine. Status button now serves dual function. It is a new function in code that handles just that button, where it should be merged with the existing button handler. I don't plan on any more multi function buttons, so I'll leave this alone. Holding the status button now does a software reset of the time. Pressing the button works as before but activates on release of the button, not on the press.
+
+V1.81:
+* Fixed a bug that caused the run time counter to roll over at 255.
