@@ -84,7 +84,8 @@ The anode drivers are made up of discrete components. An integrated solution cou
 <img width="800" height="618" alt="Nixie clock angled back view no body small" src="https://github.com/user-attachments/assets/da7869b5-af29-4a1e-b5e3-f7e1843438ed" />
 
 ### Current State
-<img width="800" height="450" alt="nixie clock front smol" src="https://github.com/user-attachments/assets/b471bc06-5313-4fb1-8293-cfda62d60684" />
+<img width="800" height="450" alt="WhatsApp Image 2026-06-04 at 9 53 20 PM (3)" src="https://github.com/user-attachments/assets/33768385-b777-4f27-adf4-5650587a16cc" />
+<img width="800" height="450" alt="WhatsApp Image 2026-06-04 at 9 53 20 PM" src="https://github.com/user-attachments/assets/fc3a82e6-0a45-44be-8f08-ae0c306f62af" />
 <img width="800" height="450" alt="nixie clock back smol" src="https://github.com/user-attachments/assets/cce45c70-2b98-4239-8bac-afe90024f1c8" />
 
 ---
