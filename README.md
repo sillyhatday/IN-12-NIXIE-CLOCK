@@ -1,56 +1,106 @@
-## IN-12 Nixie Tube Clock
+# IN-12 Nixie Tube Clock
+
+## Introduction
 
 This clock was designed with the idea of using IN-12 Nixie Tubes as its display. The design was intended to look similar to something from the 1960s with a cyberpunk style. You could say it is more like something from the Fallout franchise.
 
 The design is to be modular and 3D printing or machining friendly. The final build I would like making from aluminium or stainless steel. The use of feet or legs is yet to be determined.
 
-The internal electronics are mounted on two PCBs with a connecting pin header. One PCB for power supplies and main logic, the second for the displays and display driver. The choice of putting the display driver on the display PCB, was to reduce the amount board to board connections. For the PCBs to stack and not require extra components, the housing itself is designed in such a way that each PCB is keyed. This allows the PCBs to fit in only one position.
+---
 
-The logic board contains two power supplies, MCU and anode drivers (amongst other things). One power supply is to provide the voltage required for the displays to operate. 180v was selected to keep the voltage as low as possible while keeping display operation reliable. Too low of a voltage can could issues with the display striking. The second power supply provides power to the logic circuit. It provides 5v output.
+## Description
 
-A 12v DC supply was decided based on testing. The 180v power supply operates more reliably with a higher input voltage. A 5v DC supply causes reliability problems with the 180v power supply starting. 9v was also considered as it works just as well, but 12v was decided as I have a lot of 12v DC adaptors. A USB C supply hasn't been eliminated. I just haven't made a circuit before to negotiate higher voltages like 9v, 12v, 15v. This will come in a later version.
+The internal electronics are mounted on two PCBs with a connecting pin header. One PCB for power supplies and main logic, the second for the displays and display driver. The choice of putting the display driver on the display PCB was to reduce the amount board to board connections.
 
-The anode drivers are made up of discrete components. An integrated solution couldn't be found to handle the 180v in a through hole package. The standard way of doing this is to use two transistors, one to handle the higher voltage and one to handle the logic voltage. Each transistor does not see the others voltage. Therefore the higher voltage cannot damage the more sensitive lower voltage components. A more detailed explanation can be found easily online.
+For the PCBs to stack and not require extra components, the housing itself is designed in such a way that each PCB is keyed. This allows the PCBs to fit in only one position.
 
-It is currently unfinished. It is still in software development and finalisation of hardware. The logic PCB is underway, requiring some hardware changes before continuing.
+The logic board contains two power supplies, MCU and anode drivers. One power supply is to provide the 180v required for the displays to operate. The second power supply provides power to the logic circuit. It provides 5v output through a diode to prevent the backup battery from feeding current into the buck converter output when not energised.
 
-### 3D mock up concept
+A 9 - 12v DC supply was decided based on testing. The 180v power supply operates more reliably with a higher input voltage, to a point. 5v requires a large high current to bring the output voltage rail up to 180v. The system will operate from 8 to 16v on the input.
 
-<img width="720" height="556" alt="Clock Assembly 6 tubes" src="https://github.com/user-attachments/assets/166c8d58-e5d6-4a49-88f3-fff9083c3fa0" />
+The anode drivers are made up of discrete components. An integrated solution couldn't be found to handle the 180v in a through hole package. The standard way of doing this is to use two transistors to make a high side switching driver. A more detailed explanation can be found easily online. I like the visual of this approach also, it fits the old look of the device I wanted.
 
-### Inside of main housing
 
-<img width="720" height="556" alt="Clock Body Insides" src="https://github.com/user-attachments/assets/fbf6e1f7-941b-4de4-8bac-5d501e0ce043" />
-
-### Inside of main housing with display PCB in place
-
-<img width="720" height="556" alt="Clock Body Display PCB Inside" src="https://github.com/user-attachments/assets/c488713c-300d-4f3d-8f0b-3c4bbf7299af" />
-
-### Inside of main housing with both display and logic PCB in place
-
-<img width="720" height="556" alt="Clock Body Logic PCB inside" src="https://github.com/user-attachments/assets/7d7c772c-660d-4a1f-aa01-923126aa2ce5" />
-
-### Logic/Power PCB
-
-![IN-12_Nixie_Clock_ATmega8_-_First_Traces](https://github.com/user-attachments/assets/86c3f11b-59f5-47c3-a361-d2bf923a05b1)
+---
 
 ## Clock Functions
 
 * The clock will power on and display time starting at 00:00:00 when it is plugged in. Whenever the clock is powered on, it will default to 24 hour mode. This only applies to the first time it is powered or the backup battery is depleted.
 
-* The "hours" button is to increment the hours digits to the desired time, the same logic applies to the "minutes" button. The seconds count cannot be set. If the user wishes to sync the clock down to the second, the reset function can be used to set the clock back to 00:00:00.
+* The "hours" button is to increment the hours digits to the desired time, the same logic applies to the "minutes" button. The seconds count cannot be set. If the user wishes to sync the clock down to the second, the reset function can be used to set the clock back to 00:00:00. NEEDS REIMPLEMENTING IN V2.0
 
-* To reset the clock to 00:00:00, hold down the "status" button for 3 seconds. Continuing to hold the button will keep the clock at this time until it is released, allowing it to be synchronised easily. NOT FULLY IMPLEMENTED
+* To reset the clock to 00:00:00, hold down the "status" button for 3 seconds. Continuing to hold the button will keep the clock at this time until it is released, allowing it to be synchronised easily. NOT IMPLEMENTED
 
-* The "status" button is multi-function. It is used to reset the clock time and to display the total run time of the clock with the display tubes powered on. A single press of the "status" button will show the hours counter. This information  is stored in the clocks EEPROM memory and is saved permanently, unless the micro controller is reprogrammed and EEPROM is selected for erase. Powering off the clock, by removing the DC supply, and/or removing the internal backup battery, will not erase the counter.
+* The "status" button is multi-function. It is used to reset the clock time and to display the total run time of the clock with the display tubes powered on. A single press of the "status" button will show the hours counter. This information is stored in EEPROM memory and is saved permanently, unless the micro controller is reprogrammed and EEPROM is selected for erase. Powering off the clock, by removing the DC supply, and/or removing the internal backup battery, will not erase the counter.
 
 * The counter uses an internal timer to record data. Pressing the "hours" button does not increase the recorded hours.
 
-* When the clock is removed from DC input power, the displays will turn off. Internally the clock is still running and keeping time, providing the backup battery is not depleted. This same condition can be entered using the "standby" button. This simulates the removal of DC power, but will not deplete the backup battery. The clock will continue to run in this state indefinitely until the DC supply is removed and the backup battery is depleted.
+* When the clock is removed from DC input power, the displays will turn off. Internally the clock is still running and keeping time, providing the backup battery is not depleted. This same condition can be entered using the "standby" button. This simulates the removal of DC power, but will not deplete the backup battery. The clock will continue to run in this state indefinitely until the DC supply is removed and the backup battery is then depleted.
 
 * The clock will only record an increment in the run time, when it is powered by the DC input. If the clock is on backup battery, the counter will no longer increment. The same applies for manually putting the clock in standby with the "standby" button.
 
 * A 12 hour mode is selectable with the "mode" button. When the button is pressed, the display will briefly switch to a 2 digit mode displaying 12 or 24, depending on the mode that has been set. The button will toggle between 12 and 24 hour modes.
+
+
+## Main IC Hardware
+
+| Part | Quantity |
+| --- | --- |
+| ATMEGA8 | 1 |
+| MC34063A | 2 |
+| IN-12 Nixie | 6 |
+| K155ID1 | 1 |
+---
+
+## Progress
+
+### Done
+- First revision of PCBs
+- Working firmware with some features implemented.
+- Stable high voltage power supply
+- Case design first revision made
+
+### Working On
+- Making all remaining case parts, buttons, legs, back cover.
+- Updating PCB & fixing errors. Changing fuse, standby circuit, rearranging PCB.
+- Digit ghosting fix. Problem in hardware somewhere.
+- Adding onboard USB C 9 - 12v support.
+
+### Next
+- Finish adding firmware features, standby, battery backup, EEPROM clear.
+- Finishing case cosmetics.
+
+---
+
+## Photos
+
+### Final Concept
+<img width="800" height="618" alt="Nixie clock assembled smol" src="https://github.com/user-attachments/assets/1e9a8212-0402-4403-ae0a-39a79d97e26e" />
+<img width="800" height="618" alt="Nixie clock angled rear assembled smol" src="https://github.com/user-attachments/assets/b2e335b6-4297-470a-801e-8ea8237b3a22" />
+<img width="800" height="618" alt="Nixie clock assembled rear smol" src="https://github.com/user-attachments/assets/f9d1d854-db19-4c00-a30b-db975b41e8d6" />
+
+### Internal View
+<img width="800" height="618" alt="Nixie Clock Top View No Body smol" src="https://github.com/user-attachments/assets/5bf902ad-da0b-4dc6-a157-7706f42d8613" />
+<img width="800" height="618" alt="Nixie clock angled back view no body small" src="https://github.com/user-attachments/assets/da7869b5-af29-4a1e-b5e3-f7e1843438ed" />
+
+### Current State
+<img width="800" height="450" alt="nixie clock front smol" src="https://github.com/user-attachments/assets/b471bc06-5313-4fb1-8293-cfda62d60684" />
+<img width="800" height="450" alt="nixie clock back smol" src="https://github.com/user-attachments/assets/cce45c70-2b98-4239-8bac-afe90024f1c8" />
+
+---
+
+## Complete Parts List
+
+| Part | Package | Qty |
+| --- | --- | --- |
+| ATMEGA8 | DIP-28 | 1 |
+| MC34063A | DIP-8 | 2 |
+| K155ID1 | DIP-16 | 1 |
+| IN-12 Nixie | N/A | 6 |
+
+**To be finished**
+
+---
 
 ## Firmware Changelog
 
