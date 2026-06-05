@@ -80,8 +80,9 @@ The anode drivers are made up of discrete components. An integrated solution cou
 <img width="800" height="618" alt="Nixie clock assembled rear smol" src="https://github.com/user-attachments/assets/f9d1d854-db19-4c00-a30b-db975b41e8d6" />
 
 ### Internal View
-<img width="800" height="618" alt="Nixie Clock Top View No Body smol" src="https://github.com/user-attachments/assets/5bf902ad-da0b-4dc6-a157-7706f42d8613" />
-<img width="800" height="618" alt="Nixie clock angled back view no body small" src="https://github.com/user-attachments/assets/da7869b5-af29-4a1e-b5e3-f7e1843438ed" />
+<img width="800" height="618" alt="nixie clock internal top view" src="https://github.com/user-attachments/assets/56e1505e-102d-4b6d-bf5e-d885416d1973" />
+<img width="800" height="618" alt="nixie clock internal front angle" src="https://github.com/user-attachments/assets/8c229f4f-3645-4528-afa7-dc3dd4bc3fb2" />
+<img width="800" height="618" alt="nixie clock internal back angle" src="https://github.com/user-attachments/assets/3e675bef-5c9b-4115-9544-618f865e6af4" />
 
 ### Current State
 <img width="800" height="450" alt="WhatsApp Image 2026-06-04 at 9 53 20 PM (3)" src="https://github.com/user-attachments/assets/33768385-b777-4f27-adf4-5650587a16cc" />
