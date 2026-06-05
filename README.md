@@ -112,8 +112,8 @@ The anode drivers are made up of discrete components. An integrated solution cou
 | Inductor | 150uH | L_Radial_D8.7mm_P5.00mm_Fastron_07HCP | 1 |
 | Inductor | 1uH | L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2 | 1 |
 | Transistor | BC516 | TO-92_Inline | 1 |
-| Transistor | ??? | TO-92_Inline | 6 |
-| Transistor | ??? | TO-92_Inline | 6 |
+| Transistor | KSP92 | TO-92_Inline | 6 |
+| Transistor | MPSA42 | TO-92_Inline | 6 |
 | Transistor | 2N3904 | TO-92_Inline | 1 |
 | MOSFET | IRF9540N | TO-220-3_Vertical | 1 |
 | MOSFET | IRF740 | TO-220-3_Vertical | 1 |
