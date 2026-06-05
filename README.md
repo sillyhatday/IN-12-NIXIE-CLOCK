@@ -92,14 +92,50 @@ The anode drivers are made up of discrete components. An integrated solution cou
 
 ## Complete Parts List
 
-| Part | Package | Qty |
-| --- | --- | --- |
-| ATMEGA8 | DIP-28 | 1 |
-| MC34063A | DIP-8 | 2 |
-| K155ID1 | DIP-16 | 1 |
-| IN-12 Nixie | N/A | 6 |
-
-**To be finished**
+| Part | Part No | Package | Qty |
+| --- | --- | --- | --- |
+| JST Connector | - | JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical | 1 |
+| Capacitor | 100nF | C_Disc_D3.4mm_W2.1mm_P2.50mm | 5 |
+| Capacitor | 20pF | C_Disc_D3.4mm_W2.1mm_P2.50mm | 2 |
+| Capacitor | 1nF | C_Disc_D3.4mm_W2.1mm_P2.50mm | 1 |
+| Capacitor | 220pF | C_Disc_D3.4mm_W2.1mm_P2.50mm | 1 |
+| Capacitor | 4.7uF | CP_Radial_D6.3mm_P2.50mm | 1 |
+| Capacitor | 100uF | CP_Radial_D6.3mm_P2.50mm | 4 |
+| Diode | 1N5819 | D_DO-41_SOD81_P10.16mm_Horizontal | 4 |
+| Diode | UF4007 | D_DO-41_SOD81_P10.16mm_Horizontal | 1 |
+| Fuse | 300mA | Fuseholder_Cylinder-5x20mm_Stelvio-Kontek_PTF78_Horizontal_Open | 1 |
+| Pin Header | - | PinSocket_1x02_P2.00mm_Vertical | 1 |
+| Pin Header | - | PinSocket_1x16_P2.00mm_Vertical | 1 |
+| Pin Socket | - | PinSocket_1x16_P2.00mm_Vertical | 1 |
+| Inductor | 90uH | L_Radial_D8.7mm_P5.00mm_Fastron_07HCP | 1 |
+| Inductor | 150uH | L_Radial_D8.7mm_P5.00mm_Fastron_07HCP | 1 |
+| Inductor | 1uH | L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2 | 1 |
+| Transistor | BC516 | TO-92_Inline | 1 |
+| Transistor | ??? | TO-92_Inline | 6 |
+| Transistor | ??? | TO-92_Inline | 6 |
+| Transistor | 2N3904 | TO-92_Inline | 1 |
+| MOSFET | IRF9540N | TO-220-3_Vertical | 1 |
+| MOSFET | IRF740 | TO-220-3_Vertical | 1 |
+| Resistor | 0R75 | R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal | 1 |
+| Resistor | 0R1 | R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal | 1 |
+| Resistor | 10K | R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal | 21 |
+| Resistor | 412K | R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal | 6 |
+| Resistor | 1K | R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal | 5 |
+| Resistor | 15K | R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal | 1 |
+| Resistor | 4K7 | R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal | 1 |
+| Resistor | 100K | R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal | 1 |
+| Resistor | 6K8 | R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal | 1 |
+| Resistor | 1K5 | R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal | 2 |
+| Resistor | 220K | R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal | 1 |
+| Potentiometer | 2K | Potentiometer_Bourns_3296W_Vertical | 1 |
+| Potentiometer | 1K | Potentiometer_Bourns_3296W_Vertical | 1 |
+| Button | SHOU HAN 5.8 WSPT | Custom | 4 |
+| Button | SHOU HAN 5.8 WSPT | Custom | 1 |
+| MCU | ATMEGA8 | DIP-28 | 1 |
+| IC | MC34063A | DIP-8 | 2 |
+| IC | K155ID1 | DIP-16 | 1 |
+| Tube | IN-12 Nixie | N/A | 6 |
+| Crystal | 1MHz | Crystal_HC49-U_Vertical | 1 |
 
 ---
 
