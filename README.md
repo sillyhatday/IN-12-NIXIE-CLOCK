@@ -203,3 +203,12 @@ V1.8:
 
 V1.81:
 * Fixed a bug that caused the run time counter to roll over at 255.
+
+V2.0:
+* Complete rewrite of the whole software. Code is built around state machines now, no more blocking flag everywhere. Some features have been removed or not yet implemented. Missing code for standby function. Removed blinking colon, don't like it anymore.
+
+V2.1:
+* Code modified to work on the real nixie tube setup. Only small things like the multiplex scan direction and stuff I've forgotten. Fixed bug with button debouncing not working great since the re-write. Attempted to fix problem with run time hours data getting messed up. Not wure why as it didnt have any issue on the dev board.
+
+V2.2:
+* Added standby feature back to system. Power loss or power switch perform the same function. Displays off, 180v supply off, sleep cpu. CPU wakes once per second to keep time and check if escape standby. Not sure eeprom fix is working still. Need to add code to stop eeprom code being updated while in sleep. It's only to track tube run time.
