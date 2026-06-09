@@ -41,17 +41,6 @@ The anode drivers are made up of discrete components. An integrated solution cou
 
 * A 12 hour mode is selectable with the "mode" button. When the button is pressed, the display will briefly switch to a 2 digit mode displaying 12 or 24, depending on the mode that has been set. The button will toggle between 12 and 24 hour modes.
 
-
-## Main IC Hardware
-
-| Part | Quantity |
-| --- | --- |
-| ATMEGA8 | 1 |
-| MC34063A | 2 |
-| IN-12 Nixie | 6 |
-| K155ID1 | 1 |
----
-
 ## Progress
 
 ### Done
@@ -59,15 +48,17 @@ The anode drivers are made up of discrete components. An integrated solution cou
 - Working firmware with some features implemented.
 - Stable high voltage power supply
 - Case design first revision made
+- All remaining case parts, buttons, legs, back cover.
+- Updated PCB & fixed errors. Changed fuse, standby circuit, rearranged PCB.
+- Added onboard USB C 9 - 12v support.
+- Finished adding firmware features, standby, battery backup, EEPROM clear.
 
 ### Working On
-- Making all remaining case parts, buttons, legs, back cover.
-- Updating PCB & fixing errors. Changing fuse, standby circuit, rearranging PCB.
 - Digit ghosting fix. Problem in hardware somewhere.
-- Adding onboard USB C 9 - 12v support.
+- Power measurement testing. MCU power reduction on battery power.
+- Porting to ATMEGA328 to use lower voltage and more efficient core, LOD 1.8v vs LOD 2.7v.
 
 ### Next
-- Finish adding firmware features, standby, battery backup, EEPROM clear.
 - Finishing case cosmetics.
 
 ---
