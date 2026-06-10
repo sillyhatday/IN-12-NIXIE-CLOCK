@@ -63,7 +63,7 @@ ATMEGA328P @4MHz:
 |   YES   |    YES     |          YES           |      YES     |                YES               |        YES      |     -------    | --------------- |
 |   YES   |    YES     |          YES           |      YES     |                NO                |        YES      |     -------    | --------------- |
 
-## 2MHz Clock (Using CLKPR /8)
+## 2MHz Clock
 
 ATMEGA8A @2MHz:
 
@@ -77,7 +77,7 @@ ATMEGA8A @2MHz:
 |   YES   |    YES     |          YES           |      YES     |                YES               |        N/A      |     -------    | --------------- |
 |   YES   |    YES     |          YES           |      YES     |                NO                |        N/A      |     -------    | --------------- |
 
-ATMEGA328P @2MHz:
+ATMEGA328P @2MHz (Using CLKPR /8):
 
 | Standby | Sleep Idle | Analogue Comp Disabled | ADC Disabled | SPI, Timer0 & ADC Clock Disabled | LOD 1.8v Enable | Current @ 2.5v | Power Reduction |
 | ------- | ---------- | ---------------------- | ------------ | -------------------------------- | --------------- | -------------- | --------------- |
