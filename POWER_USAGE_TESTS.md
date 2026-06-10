@@ -33,7 +33,7 @@ ATMEGA328P @16MHz:
 |   YES   |    YES     |          NO            |      NO      |                NO                |        NO       |     5.678mA    |      28.35%     |
 |   YES   |    YES     |          YES           |      NO      |                NO                |        NO       |     5.639mA    |      29.24%     |
 |   YES   |    YES     |          YES           |      YES     |                NO                |        NO       |     4.949mA    |      47.26%     |
-|   YES   |    YES     |          YES           |      YES     |                YES               |        NO       |     INVALID    |      INVALID    |
+|   YES   |    YES     |          YES           |      YES     |                YES               |        NO       |     5.126mA    |      42.17%     |
 |   YES   |    YES     |          YES           |      YES     |                YES               |        YES      |     -------    |      -------    |
 |   YES   |    YES     |          YES           |      YES     |                NO                |        YES      |     5.539mA    |      31.57%     |
 
@@ -63,9 +63,9 @@ ATMEGA328P @4MHz:
 |   YES   |    YES     |          YES           |      YES     |                YES               |        YES      |     -------    | --------------- |
 |   YES   |    YES     |          YES           |      YES     |                NO                |        YES      |     -------    | --------------- |
 
-## 1MHz Clock (Using CLKPR /4)
+## 2MHz Clock (Using CLKPR /8)
 
-ATMEGA8A @1MHz:
+ATMEGA8A @2MHz:
 
 | Standby | Sleep Idle | Analogue Comp Disabled | ADC Disabled | SPI, Timer0 & ADC Clock Disabled | LOD 1.8v Enable | Current @ 2.5v | Power Reduction |
 | ------- | ---------- | ---------------------- | ------------ | -------------------------------- | --------------- | -------------- | --------------- |
@@ -77,7 +77,7 @@ ATMEGA8A @1MHz:
 |   YES   |    YES     |          YES           |      YES     |                YES               |        N/A      |     -------    | --------------- |
 |   YES   |    YES     |          YES           |      YES     |                NO                |        N/A      |     -------    | --------------- |
 
-ATMEGA328P @1MHz:
+ATMEGA328P @2MHz:
 
 | Standby | Sleep Idle | Analogue Comp Disabled | ADC Disabled | SPI, Timer0 & ADC Clock Disabled | LOD 1.8v Enable | Current @ 2.5v | Power Reduction |
 | ------- | ---------- | ---------------------- | ------------ | -------------------------------- | --------------- | -------------- | --------------- |
@@ -86,8 +86,8 @@ ATMEGA328P @1MHz:
 |   YES   |    YES     |          YES           |      NO      |                NO                |        NO       |     -------    | --------------- |
 |   YES   |    YES     |          YES           |      YES     |                NO                |        NO       |     -------    | --------------- |
 |   YES   |    YES     |          YES           |      YES     |                YES               |        NO       |     -------    | --------------- |
-|   YES   |    YES     |          YES           |      YES     |                YES               |        YES      |     -------    | --------------- |
-|   YES   |    YES     |          YES           |      YES     |                NO                |        YES      |     -------    | --------------- |
+|   YES   |    YES     |          YES           |      YES     |                YES               |        YES      |     4.071mA    | --------------- |
+|   YES   |    YES     |          YES           |      YES     |                NO                |        YES      |     4.057mA    | --------------- |
 
 ## Normal Operation Testing
 
