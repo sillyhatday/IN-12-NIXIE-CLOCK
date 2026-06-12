@@ -41,6 +41,8 @@ The anode drivers are made up of discrete components. An integrated solution cou
 
 * A 12 hour mode is selectable with the "mode" button. When the button is pressed, the display will briefly display 12 or 24, depending on the mode that has been set. The button will toggle between 12 and 24 hour modes.
 
+* While the clock is plugged in, the backup batteries are charged at 8 - 11mA depending on the battery state of charge. When the batteries are full, they are charged constantly at 8mA. Due to the battery technology of NiMh, they can be left charging at a low current for a long time. If this function is not wanted, omit R39 and the batteries will not be charged. As the function of the batteries is to keep time during a power outage, having them charge is not critical. While plugged into USB-C power, even when in standby, they are being charged. It's likely the life of the batteries will be shortened from being on charge for so long, it may be better to remove the batteries and recharge them manually every 6 months or replace alkaline batteries once a year.
+
 ## Progress
 
 ### Done
