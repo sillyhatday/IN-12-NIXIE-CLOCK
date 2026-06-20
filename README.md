@@ -4,6 +4,8 @@
 
 This clock was designed with the idea of using IN-12 Nixie Tubes as its display. The design was intended to look similar to something from the 1960s with a cyberpunk style. I'm not sure I have managed this or not. I think it is more art deco style.
 
+This did not work out and I went for something that took inspo from the 1950s. I'd say more Fallout than cyberpunk. Maybe American diner or 50's American car. I like it.
+
 The design is to be modular and 3D printing or machining friendly. The final build I would like making from aluminium or stainless steel.
 
 ---
@@ -55,13 +57,18 @@ The anode drivers are made up of discrete components. An integrated solution cou
 - Added onboard USB-C 9 - 12v support.
 - Finished adding firmware features, standby, battery backup, EEPROM clear.
 - Porting to ATMEGA328 to use lower voltage and more efficient core, LOD 1.8v vs LOD 2.7v.
+- Finishing case cosmetics.
 
 ### Working On
 - Digit ghosting fix. Problem in hardware somewhere.
 - Power measurement testing. MCU power reduction on battery power.
+- Standby code needs inverting for new 180v power control circuit.
+- Tidying up lettering on the back.
+- New photos of finished product and new PCBs
+- LCSC or Mouser cart ready to buy.
 
 ### Next
-- Finishing case cosmetics.
+- Done!
 
 ---
 
