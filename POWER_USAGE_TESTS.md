@@ -3,7 +3,7 @@
 >[!IMPORTANT]
 >This is a work in progress
 
->[!NOTE}
+>[!NOTE]
 >Standby refers to my codes standby mode, running only code needed to track time. <br>
 >Sleep idle refers to the AVR hardware sleep.
 >LOD watchdog uses power when enabled. This will protect the EEPROM data.
