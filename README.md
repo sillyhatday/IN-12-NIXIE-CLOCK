@@ -14,13 +14,16 @@ The design is to be modular and 3D printing or machining friendly. The final bui
 
 The internal electronics are mounted on two PCBs with a connecting pin header. One PCB for power supplies and main logic, the second for the displays and display driver. The choice of putting the display driver on the display PCB was to reduce the amount board to board connections.
 
-For the PCBs to stack and not require extra components, the housing itself is designed in such a way that each PCB is keyed. This allows the PCBs to fit in only one position.
+The clock housing is keyed to the cut outs in the PCBs. It's not possible to put them in the wron gplace.
 
-The logic board contains two power supplies, MCU and anode drivers. One power supply is to provide the 180v required for the displays to operate. The second power supply provides power to the logic circuit. It provides 5v output through a diode to prevent the backup battery from feeding current into the buck converter output when not energised.
+The logic board contains two power supplies. One power supply is for the display tube anodes. The second power supply provides power to the logic circuit.
 
-A 9 - 12v DC supply was decided based on testing. The 180v power supply operates more reliably with a higher input voltage, to a point. 5v requires a large high current to bring the output voltage rail up to 180v. The system will operate from 8 to 16v on the input.
+A 9 - 12v DC supply was decided based on testing. The system will operate from 8 to 16v on the input. I have been running mine at 9v as that is supported by more USB C power supplies than 12v.
 
-The anode drivers are made up of discrete components. An integrated solution couldn't be found to handle the 180v in a through hole package. The standard way of doing this is to use two transistors to make a high side switching driver. A more detailed explanation can be found easily online. I like the visual of this approach also, it fits the old look of the device I wanted.
+>[!NOTE]
+>Before assembling the PCBs, decide if you will use NiMH or Alkaline batteries for backup batteries. If using non-rechargable, do not populate R <br>
+>I suggest using the ATmega328 over the ATmega8 for lower standby power and longer operation on backup batteries. It otherwise doesn't make any difference. <br>
+>A description of operations can be found [HERE](ClockFunctions.md)
 
 ---
 
@@ -37,17 +40,17 @@ The anode drivers are made up of discrete components. An integrated solution cou
 - Finished adding firmware features, standby, battery backup, EEPROM clear.
 - Porting to ATMEGA328 to use lower voltage and more efficient core, LOD 1.8v vs LOD 2.7v.
 - Finishing case cosmetics.
+- Digit ghosting fix. Problem in hardware somewhere.
+- Standby code needs inverting for new 180v power control circuit.
 
 ### 🟡 Working On
-- Digit ghosting fix. Problem in hardware somewhere.
 - Power measurement testing. MCU power reduction on battery power.
-- Standby code needs inverting for new 180v power control circuit.
 - Tidying up lettering on the back.
 - New photos of finished product and new PCBs
 - LCSC or Mouser cart ready to buy.
 
 ### ⚪ Next
-- Done!
+- Create prebuild mouser cart
 
 ---
 
