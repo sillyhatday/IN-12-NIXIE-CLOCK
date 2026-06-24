@@ -1,13 +1,12 @@
-# Power Usage Measurements
+# Standby Power Use
 
-### Work In Progress
+>[!IMPORTANT]
+>This is a work in progress
 
-Preface:
-(Standby refers to my code running in standby mode, running only code needed to track time. No display driving, no mode switching, display buffers idle, timer 2 disabled).
-
-(Sleep idle refers to the AVR hardware. There are different sleep modes, each with differing levels of internal hardware shutdown. Idle is the lowest power mode that can be used to sleep and keep track of time with timer 1).
-
-(LOD watchdog uses power when enabled. Trade off is worth it for clean low battery cutoff. MCU held in reset and EEPROM protected).
+>[!NOTE}
+>Standby refers to my codes standby mode, running only code needed to track time. <br>
+>Sleep idle refers to the AVR hardware sleep.
+>LOD watchdog uses power when enabled. This will protect the EEPROM data.
 
 ## Standby Testing
 
@@ -89,7 +88,7 @@ ATMEGA328P @2MHz (Using CLKPR /8):
 |   YES   |    YES     |          YES           |      YES     |                YES               |        YES      |     4.071mA    | --------------- |
 |   YES   |    YES     |          YES           |      YES     |                NO                |        YES      |     4.057mA    | --------------- |
 
-## Normal Operation Testing
+## Normal Operation
 
 ### ATMEGA8A:
 
