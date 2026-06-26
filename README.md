@@ -21,8 +21,8 @@ The logic board contains two power supplies. One power supply is for the display
 A 9 - 12v DC supply was decided based on testing. The system will operate from 8 to 16v on the input. I have been running mine at 9v as that is supported by more USB C power supplies than 12v.
 
 >[!NOTE]
->Before assembling the PCBs, decide if you will use NiMH or Alkaline batteries for backup batteries. If using non-rechargable, do not populate R <br>
->I suggest using the ATmega328 over the ATmega8 for lower standby power and longer operation on backup batteries. It otherwise doesn't make any difference. <br>
+>Before building, decide if you will use NiMH or Alkaline batteries for backup batteries. If using non-rechargable, do not populate R39 <br>
+>I suggest using the ATmega328 over the ATmega8 for lower standby power and longer operation on backup batteries. <br>
 >A description of operations can be found [HERE](ClockFunctions.md)
 
 ---
@@ -56,20 +56,19 @@ A 9 - 12v DC supply was decided based on testing. The system will operate from 8
 
 ## Photos
 
-### Final Concept
-<img width="800" height="618" alt="Nixie clock assembled smol" src="https://github.com/user-attachments/assets/1e9a8212-0402-4403-ae0a-39a79d97e26e" />
-<img width="800" height="618" alt="Nixie clock angled rear assembled smol" src="https://github.com/user-attachments/assets/b2e335b6-4297-470a-801e-8ea8237b3a22" />
-<img width="800" height="618" alt="Nixie clock assembled rear smol" src="https://github.com/user-attachments/assets/f9d1d854-db19-4c00-a30b-db975b41e8d6" />
+>[!TIP]
+>Some build images can be seen [here](https://github.com/sillyhatday/IN-12-NIXIE-CLOCK/blob/main/CONCEPT%26BUILD.md)
 
-### Internal View
-<img width="800" height="618" alt="nixie clock internal top view" src="https://github.com/user-attachments/assets/56e1505e-102d-4b6d-bf5e-d885416d1973" />
-<img width="800" height="618" alt="nixie clock internal front angle" src="https://github.com/user-attachments/assets/8c229f4f-3645-4528-afa7-dc3dd4bc3fb2" />
-<img width="800" height="618" alt="nixie clock internal back angle" src="https://github.com/user-attachments/assets/3e675bef-5c9b-4115-9544-618f865e6af4" />
+### Complete
+<img width="500" height="281" alt="NixieClockFinished" src="https://github.com/user-attachments/assets/e34e6bef-eb4f-42de-887e-17156ae56456" />
+<img width="500" height="281" alt="nixie iv6" src="https://github.com/user-attachments/assets/a0f94157-f864-4c98-9392-062dd2a5cee3" />
 
-### Current State
-<img width="800" height="450" alt="WhatsApp Image 2026-06-04 at 9 53 20 PM (3)" src="https://github.com/user-attachments/assets/33768385-b777-4f27-adf4-5650587a16cc" />
-<img width="800" height="450" alt="WhatsApp Image 2026-06-04 at 9 53 20 PM" src="https://github.com/user-attachments/assets/fc3a82e6-0a45-44be-8f08-ae0c306f62af" />
-<img width="800" height="450" alt="nixie clock back smol" src="https://github.com/user-attachments/assets/cce45c70-2b98-4239-8bac-afe90024f1c8" />
+>[!NOTE]
+>IV-6 Clock project on top. To be broken for parts for something better.
+
+### Final PCB
+
+<img width="500" height="281" alt="NixieClockPCB" src="https://github.com/user-attachments/assets/e79a00d2-4551-404a-a0d4-78f3ac464e17" />
 
 ---
 
